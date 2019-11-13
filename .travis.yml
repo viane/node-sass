@@ -6,6 +6,11 @@ env:
   global:
     - SKIP_SASS_BINARY_DOWNLOAD_FOR_CI=true
 
+arch:
+  - amd64
+  - s390x
+  - arm64
+
 jobs:
   include:
     - stage: test

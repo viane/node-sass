@@ -33,11 +33,19 @@ jobs:
       arch: s390x
     - stage: platform-test
       node_js: "11"
+      os: linux
+      arch: amd64
+    - stage: platform-test
+      node_js: "11"
       os: osx
     - stage: platform-test
       node_js: "10"
       os: linux
-      arch: s390x      
+      arch: s390x
+    - stage: platform-test
+      node_js: "10"
+      os: linux
+      arch: amd64      
     - stage: platform-test
       node_js: "10"
       os: osx
@@ -47,25 +55,41 @@ jobs:
       arch: s390x
     - stage: platform-test
       node_js: "9"
+      os: linux
+      arch: amd64
+    - stage: platform-test
+      node_js: "9"
       os: osx
     - stage: platform-test
       node_js: "8"
       os: linux
-      arch: s390x      
+      arch: s390x
+    - stage: platform-test
+      node_js: "8"
+      os: linux
+      arch: amd64   
     - stage: platform-test
       node_js: "8"
       os: osx
     - stage: platform-test
       node_js: "7"
       os: linux
-      arch: s390x      
+      arch: s390x
+    - stage: platform-test
+      node_js: "7"
+      os: linux
+      arch: amd64    
     - stage: platform-test
       node_js: "7"
       os: osx
     - stage: platform-test
       node_js: "6"
       os: linux
-      arch: s390x      
+      arch: s390x
+    - stage: platform-test
+      node_js: "6"
+      os: linux
+      arch: amd64     
     - stage: platform-test
       node_js: "6"
       os: osx
@@ -73,6 +97,10 @@ jobs:
       node_js: "4"
       os: linux
       arch: s390x
+    - stage: platform-test
+      node_js: "4"
+      os: linux
+      arch: amd64
     - stage: platform-test
       node_js: "4"
       os: osx
@@ -81,9 +109,17 @@ jobs:
       os: linux
       arch: s390x
     - stage: platform-test
+      node_js: "0.12"
+      os: linux
+      arch: amd64
+    - stage: platform-test
       node_js: "0.10"
       os: linux
       arch: s390x
+    - stage: platform-test
+      node_js: "0.10"
+      os: linux
+      arch: amd64
 
 addons:
   apt:

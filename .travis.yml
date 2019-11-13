@@ -18,10 +18,12 @@ jobs:
       os: osx
     - stage: platform-test
       node_js: "12"
-      - os: linux
-        arch: s390x
-      - os: linux
-        arch: amd64
+      os: linux
+      arch: s390x
+    - stage: platform-test
+      node_js: "12"
+      os: linux
+      arch: amd64
     - stage: platform-test
       node_js: "12"
       os: osx
